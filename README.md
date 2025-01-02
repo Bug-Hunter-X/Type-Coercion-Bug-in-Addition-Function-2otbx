@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in JavaScript related to type coercion during addition.  The `foo` function intends to return `null` if either input is `null`. However, due to JavaScript's loose typing, if a string that can be implicitly converted to a number is passed, the function will perform addition.  This is unexpected behavior and might lead to errors in applications relying on strict null checks.
+
+The `bug.js` file contains the buggy code. The `bugSolution.js` file provides a corrected version that handles null and non-numeric inputs correctly.
